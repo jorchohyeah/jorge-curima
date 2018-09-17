@@ -1,4 +1,3 @@
-package main.java.resis.java;
 
 public class Player {
     String name;

@@ -1,5 +1,3 @@
-package main.java.resis.java;
-
 public class Container{
     private int initSticks = 0;
     private int sticks = 0;
