@@ -22,9 +22,6 @@ public class App {
         }
         System.out.println("Have a nice day! ");
     }
-
-
-
     private static List<Player> createPlayers(int cant,Scanner sc){
         sc.nextLine();
         List<Player> players = new ArrayList<>();
@@ -62,4 +59,3 @@ public class App {
         return cont.getLast();
     }
 }
-
