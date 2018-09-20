@@ -16,7 +16,7 @@ public class App {
             List<Player> players = createPlayers(sc.nextInt(),sc);
             System.out.println("How many sticks?");
             Container cont = initializeContainer(sc.nextInt(),sc);
-            System.out.println("Woops! Seems like :" + chooseWinner(players,cont,sc) + " has lost this match! Better luck next time!");
+            System.out.println("Woops! Seems like :" + chooseLoser(players,cont,sc) + " has lost this match! Better luck next time!");
             System.out.println("Wanna play again?");
             ans = sc.next().toUpperCase();
         }
@@ -41,7 +41,7 @@ public class App {
         cont.setSticks(cont.getInitSticks());
         return cont;
     }
-    private static String chooseWinner(List<Player> players,Container cont,Scanner sc){
+    private static String chooseLoser(List<Player> players,Container cont,Scanner sc){
         int x = 0;
         int sticks = 0;
         while (cont.getSticks() > 0) {
