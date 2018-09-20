@@ -1,5 +1,3 @@
-package java.resis.java;
-
 public class Tag {
     String name;
 
