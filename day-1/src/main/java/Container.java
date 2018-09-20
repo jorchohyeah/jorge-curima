@@ -1,21 +1,34 @@
-public class Container{
+public class Container {
     private int initSticks = 0;
     private int sticks = 0;
+    private String last;
 
-    int getSticks(){
-        return sticks;
+    int getSticks() {
+        return this.sticks;
     }
-    int getInitSticks(){
-        return initSticks;
+
+    int getInitSticks() {
+        return this.initSticks;
     }
-    void setSticks(int ammount){
-        sticks = ammount;
+
+    String getLast() {
+        return this.last;
     }
-    void takeStick(int ammount){
-        sticks -= ammount;
+
+    void setLast(String playerName) {
+        this.last = playerName;
     }
-    public Container(int sticks1){
-        initSticks = sticks1;
+
+    void setSticks(int ammount) {
+        this.sticks = ammount;
+    }
+
+    void takeStick(int ammount) {
+        this.sticks -= ammount;
+    }
+
+    public Container(int sticks1) {
+        this.initSticks = sticks1;
     }
 
 }

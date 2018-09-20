@@ -7,6 +7,6 @@ public class Player {
     }
 
     public Player(String name1){
-        name = name1;
+        this.name = name1;
     }
 }
