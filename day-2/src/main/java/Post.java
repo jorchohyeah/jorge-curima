@@ -8,22 +8,35 @@ public class Post {
     Date date;
     List<Tag> tags;
 
-    private int getId(){
+    void setId(int id){
+        this.id = id;
+    }
+    void setTitle(String title){
+        this.title = title;
+    }
+    private int getId() {
+
         return id;
     }
-    String getTitle(){
+
+    String getTitle() {
         return title;
     }
-    String getText(){
+
+    String getText() {
         return text;
     }
-    Date getDate(){
+
+    Date getDate() {
         return date;
     }
-    List<Tag> getTags(){
+
+    List<Tag> getTags() {
         return tags;
     }
-    String showTags(){
+
+/*
+    String showTags() {
         int limit = tags.size();
         Tag aux;
         for (int i = 0; i < limit; i++) {
@@ -33,7 +46,9 @@ public class Post {
         }
 
     }
-    void addTag(String t){
+*/
 
-    }
+/*    void addTag(String t) {
+
+    }*/
 }
