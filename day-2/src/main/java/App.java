@@ -61,7 +61,7 @@ public class App {
         switch (ans) {
             case 1:
                 System.out.println("Creating new Post!");
-                App.createPost();
+                createPost();
             case 2:
                 System.out.println("Editing Post");
                 editPost();
@@ -91,25 +91,25 @@ public class App {
 
     } //Post options
 
-    private static createPost() {
+    private static void createPost(Scanner sc) {
         Post posti = new Post();
-        if (postList.isEmpty()) {
+        if (postList.isEmpty()) {       //Check if first
             posti.setId(1);
         } else {
             int i = 0;
-            while (i < postList.size()) {
+            while (i < postList.size()) {       //Otherwise look for last entry
                 if (postList.get(i) == null) {
                     posti.setId(i + 1);
                 }
             }
         }
         System.out.println("Insert the title");
+        posti.setTitle(sc.nextLine());
         System.out.println("What do you want to post?");
+        posti.setTitle(sc.nextLine());
         System.out.println("Add your tags");
+        // Check for repeated tags, tenes tagList (Transient) y tags (Post)
         System.out.println("Your post have been successfully created on" + posti.getDate());
-
-        sc.
-                System.out.println("")
     }
 
 

@@ -1,11 +1,11 @@
 import java.util.List;
-import java.util.Date;
+import java.time.*;
 
 public class Post {
     int id;
     String title;
     String text;
-    Date date;
+    LocalDateTime date;
     List<Tag> tags;
 
     void setId(int id) {
@@ -29,7 +29,7 @@ public class Post {
         return text;
     }
 
-    Date getDate() {
+    LocalDateTime getDate() {
         return date;
     }
 
