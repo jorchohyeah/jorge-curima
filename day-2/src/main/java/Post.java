@@ -16,6 +16,10 @@ public class Post {
         this.title = title;
     }
 
+    void setDate(LocalDateTime date){
+        this.date = date;
+    }
+
     private int getId() {
 
         return id;
